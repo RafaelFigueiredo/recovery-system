@@ -28,14 +28,14 @@ A velocidade de queda de qualquer objeto (como um foguete) equipado com paraqued
 A força de arrasto é dependente da:
  1. Pressão dinâmica criada pelo ar em movimento pressionando o velame do paraquedas (é o que mantém o paraquedas inflado).
  2. O diâmetro do paraquedas, que determina a área em que a pressão dinâmica atua.
- 3. O coeficiente de arrasto do paraquedas $C_d$
+ 3. O coeficiente de arrasto do paraquedas <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e59566d5954aef5ef721404d38cbb37c.svg?invert_in_darkmode" align=middle width=18.59192775pt height=22.4657235pt/>
 A pressão dinâmica é função da velocidade e da densidade do ar, logo varia com a altitude e temperatura.
 
 #### Velocidade Terminal
 A velocidade terminal provida por um paraquedas em uma descida estável é dada por:
-$$ V_e=\sqrt{\frac{2W_t}{S_c.Cd.\rho}} $$
+<p align="center"><img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/ba3dbc5fbad06d605ba58fbd4bc77060.svg?invert_in_darkmode" align=middle width=114.83745405pt height=49.3155696pt/></p>
 
-Onde $ V_e $ = velocidade terminal, $W_t$= peso do foguete + paraquedas, $ S_c $ área da superfície do velame, $Cd $ coeficiente de arrasto e $ \rho $ densidade do ar.
+Onde <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/b6eaf83185a33051537f482590a09dd4.svg?invert_in_darkmode" align=middle width=15.82597005pt height=22.4657235pt/> = velocidade terminal, <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/bd049554fbc115df2fe2a43a4e203ffd.svg?invert_in_darkmode" align=middle width=20.49092595pt height=22.4657235pt/>= peso do foguete + paraquedas, <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/5436a70b50756a709d69dc3c9d30f02c.svg?invert_in_darkmode" align=middle width=15.95457765pt height=22.4657235pt/> área da superfície do velame, <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/cde8f10dbe6e8fa1c4c752365b80f053.svg?invert_in_darkmode" align=middle width=21.4806009pt height=22.8310566pt/> coeficiente de arrasto e <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/4e5727f4d784156580992da9b0c9f6bb.svg?invert_in_darkmode" align=middle width=8.49888435pt height=14.1552444pt/> densidade do ar.
 #### Coeficiente de Arrasto
 O coeficiente de arrasto de qualquer paraquedas é dependente de vários fatores, entre eles:
  - Características de planar( gerar sustentação)
@@ -46,21 +46,21 @@ O coeficiente de arrasto de qualquer paraquedas é dependente de vários fatores
  - Comprimento dos cabos.
 O coeficiente de arrasto é usualmente obtido por testes, seja em um túnel de vento ou por teste de queda, e é determinado pela medida da força de arrasto a determinada velocidade (pressão dinâmica)
 A equação empregada é:
-$$F_d=p A C_d$$
-Ou, para determinar o $C_d$ a partir da força de arrasto medida:
-$$Cd=\frac{F_d}{p A}$$
-Onde $C_d$=coeficiente de arrasto, $F_d$= força de arrasto, $p$ pressão dinâmica e $A$=Areá da seção transversal.
+<p align="center"><img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/6a572f829d9e815fc384c69144ed071a.svg?invert_in_darkmode" align=middle width=79.34471655pt height=14.42921205pt/></p>
+Ou, para determinar o <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e59566d5954aef5ef721404d38cbb37c.svg?invert_in_darkmode" align=middle width=18.59192775pt height=22.4657235pt/> a partir da força de arrasto medida:
+<p align="center"><img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/80b2432e4e394acba08f07e9ebfaa707.svg?invert_in_darkmode" align=middle width=65.9701944pt height=36.82577085pt/></p>
+Onde <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e59566d5954aef5ef721404d38cbb37c.svg?invert_in_darkmode" align=middle width=18.59192775pt height=22.4657235pt/>=coeficiente de arrasto, <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/6af71346f7b5c6878bafdee92fe6e3df.svg?invert_in_darkmode" align=middle width=17.4138756pt height=22.4657235pt/>= força de arrasto, <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/2ec6e630f199f589a2402fdf3e0289d5.svg?invert_in_darkmode" align=middle width=8.27056725pt height=14.1552444pt/> pressão dinâmica e <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode" align=middle width=12.32879835pt height=22.4657235pt/>=Areá da seção transversal.
 
 
-Para um corpo simples como um cone, a área da seção transversal é simples de ser calculada, sendo simplesmente $\pi R^2$, onde R=raio da base do cone. Entretanto para paraquedas esse não é o caso, a área de referência para ser usada no calculo do coeficiente de arrasto de um paraquedas é área da superfície do velame. Esta escolha da área de referência apenas como a projeção, embora conveniente, é menos significativa, e torna o Cd uma medida um tanto falha da eficácia de um pára-quedas.
+Para um corpo simples como um cone, a área da seção transversal é simples de ser calculada, sendo simplesmente <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/d3c6b268293c506b7fdb63dbba0c611b.svg?invert_in_darkmode" align=middle width=29.1211041pt height=26.7617526pt/>, onde R=raio da base do cone. Entretanto para paraquedas esse não é o caso, a área de referência para ser usada no calculo do coeficiente de arrasto de um paraquedas é área da superfície do velame. Esta escolha da área de referência apenas como a projeção, embora conveniente, é menos significativa, e torna o Cd uma medida um tanto falha da eficácia de um pára-quedas.
 #### Efeito de sustentação
 ![enter image description here](https://lh3.googleusercontent.com/-jkYD572v9Ww/WKR2SHCizOI/AAAAAAAAAKE/brIhaRniXak-wBx2z_hf68cp-TS-7QXmQCLcB/s0/paraglid.gif "paraglid.gif")
-A natureza de planeio de um pára-quedas é outra razão que usar o $C_d$ como uma medida da eficácia de um pára-quedas pode ser enganoso (Figura 1). Quando um pára-quedas desce, ele pode ter tanto uma componente descendente de velocidade como uma componente horizontal (em outras palavras, ao invés de descer em linha reta, ele descerá em um ângulo). O ar que flui em torno do pára-quedas a uma determinada velocidade $V$ gera tanto forças de sustentação como de arrasto - o arrasto $D$ atuando em oposição à sua linha de movimento, e a sustentação $L$ agindo perpendicular a este, tendendo a reduzir a velocidade de descida , Portanto, o coeficiente de arrasto medido a partir de testes de "queda livre" pode indicar um $C_d$ significativamente maior (do que, digamos, aquele medido em um túnel de vento), como resultado deste fenômeno de sustentação.
+A natureza de planeio de um pára-quedas é outra razão que usar o <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e59566d5954aef5ef721404d38cbb37c.svg?invert_in_darkmode" align=middle width=18.59192775pt height=22.4657235pt/> como uma medida da eficácia de um pára-quedas pode ser enganoso (Figura 1). Quando um pára-quedas desce, ele pode ter tanto uma componente descendente de velocidade como uma componente horizontal (em outras palavras, ao invés de descer em linha reta, ele descerá em um ângulo). O ar que flui em torno do pára-quedas a uma determinada velocidade <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/a9a3a4a202d80326bda413b5562d5cd1.svg?invert_in_darkmode" align=middle width=13.24203705pt height=22.4657235pt/> gera tanto forças de sustentação como de arrasto - o arrasto <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/78ec2b7008296ce0561cf83393cb746d.svg?invert_in_darkmode" align=middle width=14.06623185pt height=22.4657235pt/> atuando em oposição à sua linha de movimento, e a sustentação <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/ddcb483302ed36a59286424aa5e0be17.svg?invert_in_darkmode" align=middle width=11.18724255pt height=22.4657235pt/> agindo perpendicular a este, tendendo a reduzir a velocidade de descida , Portanto, o coeficiente de arrasto medido a partir de testes de "queda livre" pode indicar um <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e59566d5954aef5ef721404d38cbb37c.svg?invert_in_darkmode" align=middle width=18.59192775pt height=22.4657235pt/> significativamente maior (do que, digamos, aquele medido em um túnel de vento), como resultado deste fenômeno de sustentação.
 
 #### Efeito oscilatório
-O fluxo de ar ao redor e sobre o velame de um pára-quedas pode produzir um padrão oscilante (em espiral), ou conicidade, no movimento descendente do pára-quedas  à medida que a separação do fluxo e as forças de sucção se alternam em direção. Portanto, um pára-quedas pode ser considerado capaz de descer quer num modo de planeio, quer num modo oscilante, ou numa combinação de ambos. O deslizamento tende a prevalecer a baixas velocidades de descida, e oscilando a taxas intermediárias. O $C_d$ resultante pode variar significativamente, dependendo do modo de descida, conforme indicado pelos seguintes dados para um pára-quedas normal de tamanho real:
+O fluxo de ar ao redor e sobre o velame de um pára-quedas pode produzir um padrão oscilante (em espiral), ou conicidade, no movimento descendente do pára-quedas  à medida que a separação do fluxo e as forças de sucção se alternam em direção. Portanto, um pára-quedas pode ser considerado capaz de descer quer num modo de planeio, quer num modo oscilante, ou numa combinação de ambos. O deslizamento tende a prevalecer a baixas velocidades de descida, e oscilando a taxas intermediárias. O <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e59566d5954aef5ef721404d38cbb37c.svg?invert_in_darkmode" align=middle width=18.59192775pt height=22.4657235pt/> resultante pode variar significativamente, dependendo do modo de descida, conforme indicado pelos seguintes dados para um pára-quedas normal de tamanho real:
 
-| Descent velocity | Descent mode | $C_d$   |
+| Descent velocity | Descent mode | <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e59566d5954aef5ef721404d38cbb37c.svg?invert_in_darkmode" align=middle width=18.59192775pt height=22.4657235pt/>   |
 |---|---|---|
 |23 fps	|restrained	|1.26|
 |20 fps	|oscillating	|1.60|
@@ -75,13 +75,13 @@ O formato do velame, seja hemisférico, semi-elíptico ou parasheet, não tem ef
 A permeabilidade, que quantifica a velocidade do ar através do material do velame é dependente da porosidade do tecido deste. A porosidade é influenciada basicamente pelo aperto da trama. O coeficiente de arrasto não é drasticamente influenciado pela permeabilidade, desde que a porosidade não seja excessiva. Seguindo essa perspectiva, qualquer tecido com um razoável aperto na trama pode ser utilizado.
 
 #### Altas velocidades
-O $C_d$ de um paraquedas é dependente da sua velocidade (descendente) por uma pequena faixa, a altas velocidades o $C_d$ diminui. Isto se deve ao aumento da porosidade do tecido devido ao aumento das cargas de tensão no velame. 
+O <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e59566d5954aef5ef721404d38cbb37c.svg?invert_in_darkmode" align=middle width=18.59192775pt height=22.4657235pt/> de um paraquedas é dependente da sua velocidade (descendente) por uma pequena faixa, a altas velocidades o <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e59566d5954aef5ef721404d38cbb37c.svg?invert_in_darkmode" align=middle width=18.59192775pt height=22.4657235pt/> diminui. Isto se deve ao aumento da porosidade do tecido devido ao aumento das cargas de tensão no velame. 
 Isto também pode ser influência do numero de Reynolds, já que o fluxo de ar através dos poros do tecido é uma função deste. Também, a velocidades mais elevadas, a tensão nos tirantes aumenta, afetando a forma e, portanto, a área efectiva da cobertura.
 
 Também a altas velocidades, a tensão dos cordames aumenta afetando o formato do velame e consequentemente sua área efetiva.
 
 #### Comprimento dos Tirantes
-O diâmetro inflado (e portando a área) e formato do velame são influenciados pelo comprimento dos tirantes $L$ em relação ao diâmetro do velame $D$. Conforme o comprimento dos tirantes aumenta, o $C_d$ também aumenta. Este efeito é mais perceptivo, não surpreendentemente, quando os tirantes são curtos, por exemplo $L/D <0.5$, mas se tornam menos significantes quando $L/D>1$.
+O diâmetro inflado (e portando a área) e formato do velame são influenciados pelo comprimento dos tirantes <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/ddcb483302ed36a59286424aa5e0be17.svg?invert_in_darkmode" align=middle width=11.18724255pt height=22.4657235pt/> em relação ao diâmetro do velame <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/78ec2b7008296ce0561cf83393cb746d.svg?invert_in_darkmode" align=middle width=14.06623185pt height=22.4657235pt/>. Conforme o comprimento dos tirantes aumenta, o <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e59566d5954aef5ef721404d38cbb37c.svg?invert_in_darkmode" align=middle width=18.59192775pt height=22.4657235pt/> também aumenta. Este efeito é mais perceptivo, não surpreendentemente, quando os tirantes são curtos, por exemplo <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/20b3c92d86c6fe98c92cf4a127089684.svg?invert_in_darkmode" align=middle width=76.3949571pt height=24.657534pt/>, mas se tornam menos significantes quando <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/022c1b698f7c82d075d18ea3defac2ee.svg?invert_in_darkmode" align=middle width=63.6095229pt height=24.657534pt/>.
 
 
 
@@ -89,7 +89,7 @@ O diâmetro inflado (e portando a área) e formato do velame são influenciados 
 
 ## Design do paraquedas
 Agora que discutimos os vários fatores que afetam o desempenho de um paraquedas vamos ir ao projeto. Escrevi um programa em Python, utilizando as bibliotecas NumPy(matemática simbólica) e Matplot (plotagem de gráficos) para gerar a visualização de nosso paraquedas e também para podermos ter as medidas exatas para o corte do tecido que será utilizado na fabricação dos gomos.
-Neste projeto utilizamos um velame semi-eliptico de excentricidade $e=0.7$, que será fabricado em $12$ gomos.
+Neste projeto utilizamos um velame semi-eliptico de excentricidade <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/599fd9cc1122e5d088ee459db73c0438.svg?invert_in_darkmode" align=middle width=50.5764105pt height=21.1872144pt/>, que será fabricado em <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/d0b46deac7c0bf4f6285cbeb41067c88.svg?invert_in_darkmode" align=middle width=16.4384187pt height=21.1872144pt/> gomos.
 #### Plota o velame
 ![enter image description here](https://lh3.googleusercontent.com/-frmqum3YjkY/WKZ3GpD_j7I/AAAAAAAAAL0/Dg97CChvnOgNNrIbqYGlhvn5s7QhGozzACLcB/s0/velame.png "velame.png")
 
@@ -129,7 +129,7 @@ Neste projeto utilizamos um velame semi-eliptico de excentricidade $e=0.7$, que 
     plt.show()
 
 
-#### Plota o gomo ($N=12$)
+#### Plota o gomo (<img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/d91f1fccf3ca1e83e854e47fc1d00c85.svg?invert_in_darkmode" align=middle width=53.35601865pt height=22.4657235pt/>)
 ![enter image description here](https://lh3.googleusercontent.com/-eRCUuPSnLyY/WKZ4futCA9I/AAAAAAAAAMA/Va6KnnxlhbELmgO67zIzCXNAsIzGlah2QCLcB/s0/gomo.png "gomo.png")
 
     #plota o gomo
@@ -157,16 +157,15 @@ Neste projeto utilizamos um velame semi-eliptico de excentricidade $e=0.7$, que 
 
 #### Planificação do gomo para corte do tecido
 Se pegarmos o plano interceptando transversalmente a superfície do gomo este projetará sobre ele a parte de uma elipse no primeiro quadrante. Esta curva pode ser parametrizada como:
-$$x=a.cost(\theta ); y=b.sin(\theta) $$
-Onde $\theta$ é o angulo  de apertura de um segmento da curva.
+<p align="center"><img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/e19168b9394ea87e7f3af85e888c1a5a.svg?invert_in_darkmode" align=middle width=187.9386729pt height=16.438356pt/></p>
+Onde <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/27e556cf3caa0673ac49a8f0de3c73ca.svg?invert_in_darkmode" align=middle width=8.17352745pt height=22.8310566pt/> é o angulo  de apertura de um segmento da curva.
 
-Para uma pequena variação do angulo $\Delta$ o segmento da curva avança:
-$$\int_{\theta}^{\theta+\Delta\theta} f(x(\theta),y(\theta))\sqrt{{x}'(\theta)^2 + {y}'(\theta)^2 } d\theta$$
-$f(\theta)=1$
-$x(\theta)=a.cos(\theta) \rightarrow x'(\theta)=-a.sin(\theta)$
-$y(\theta)=b.sin(\theta) \rightarrow y'(\theta)=b.cos(\theta) \\$
-$$\int_{\theta}^{\theta+\Delta\theta} \sqrt{[-a.sin(\theta)]^2 + [b.cos(\theta)]^2 } d\theta \rightarrow
-\int_{\theta}^{\theta+\Delta\theta} \sqrt{a^2.sin^2(\theta) + b^2.cos^2(\theta) } d\theta  $$
+Para uma pequena variação do angulo <img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/7e9fe18dc67705c858c077c5ee292ab4.svg?invert_in_darkmode" align=middle width=13.69867125pt height=22.4657235pt/> o segmento da curva avança:
+<p align="center"><img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/4fb373cc6ce095457af819e53f47d1a1.svg?invert_in_darkmode" align=middle width=281.18560635pt height=41.27894265pt/></p>
+<img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/a064ab0ce7c67dd9e0174654da6f93e2.svg?invert_in_darkmode" align=middle width=60.91321335pt height=24.657534pt/>
+<img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/345f53f340f6a422e6a450a1d22b9e36.svg?invert_in_darkmode" align=middle width=261.96266085pt height=24.7161288pt/>
+<img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/cd594415e39eaa79a6ac317e813b8774.svg?invert_in_darkmode" align=middle width=244.4169486pt height=24.7161288pt/>
+<p align="center"><img src="https://rawgit.com/RafaelFigueiredo/recovery-system/master/svgs/c3ce9422d65668777a767b2be5f73faf.svg?invert_in_darkmode" align=middle width=541.2620631pt height=41.27894265pt/></p>
 
 
 Intregral de linha
