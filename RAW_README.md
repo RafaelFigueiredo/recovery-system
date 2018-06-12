@@ -93,6 +93,7 @@ Neste projeto utilizamos um velame semi-eliptico de excentricidade $e=0.7$, que 
 #### Plota o velame
 ![enter image description here](https://lh3.googleusercontent.com/-frmqum3YjkY/WKZ3GpD_j7I/AAAAAAAAAL0/Dg97CChvnOgNNrIbqYGlhvn5s7QhGozzACLcB/s0/velame.png "velame.png")
 
+```python
     import numpy as np
     import matplotlib.pyplot as plt
     import mpl_toolkits.mplot3d.axes3d as axes3d
@@ -127,11 +128,12 @@ Neste projeto utilizamos um velame semi-eliptico de excentricidade $e=0.7$, que 
     ax.set_ylim(-50, 50) 
     ax.set_zlim(-50, 50) 
     plt.show()
-
+```
 
 #### Plota o gomo ($N=12$)
 ![enter image description here](https://lh3.googleusercontent.com/-eRCUuPSnLyY/WKZ4futCA9I/AAAAAAAAAMA/Va6KnnxlhbELmgO67zIzCXNAsIzGlah2QCLcB/s0/gomo.png "gomo.png")
 
+```python
     #plota o gomo
     gtheta = np.linspace(0-np.pi/2, -np.pi/2+(2 * np.pi / N), 30)
     GTHETA, PHI = np.meshgrid(gtheta, phi)
@@ -154,6 +156,7 @@ Neste projeto utilizamos um velame semi-eliptico de excentricidade $e=0.7$, que 
         ax.set_ylim(-50, 50) 
         ax.set_zlim(-50, 50) 
         plt.show()
+```
 
 #### Planificação do gomo para corte do tecido
 Se pegarmos o plano interceptando transversalmente a superfície do gomo este projetará sobre ele a parte de uma elipse no primeiro quadrante. Esta curva pode ser parametrizada como:
